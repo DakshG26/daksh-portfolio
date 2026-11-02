@@ -1,0 +1,69 @@
+Act as an expert Frontend Developer and UI/UX Designer. Create a modern, responsive, developer-centric personal portfolio website for **Daksh Gupta** using **STRICTLY pure HTML5 and CSS3 only** (zero JavaScript, zero external CSS frameworks like Tailwind or Bootstrap).
+
+### 1. Technical Constraints
+- **Pure HTML & CSS Only:** Do not include any `<script>` tags or inline JS. Use modern CSS features for interactivity: `:hover`, `:focus`, `:target`, `@keyframes`, `scroll-behavior: smooth`, CSS Grid, and Flexbox.
+- **Responsive Navigation:** Implement a mobile hamburger menu using the **CSS Checkbox Hack** (`<input type="checkbox" id="nav-toggle">` + `<label>` + sibling combinators).
+- **Single-File or Two-File Ready:** Provide a complete `index.html` file and a complete `style.css` file (or embed the CSS inside a `<style>` block so it runs immediately in one file, while keeping it cleanly separated).
+- **Typography & Icons:** Load Google Fonts (`Inter` or `Plus Jakarta Sans` for UI, `JetBrains Mono` for code/tags) and use inline SVGs for icons (GitHub, LinkedIn, Mail, External Link, Terminal).
+
+### 2. Design & Aesthetic Direction
+- **Theme:** Dark, sleek, technical, "Linear / Vercel / Raycast" inspired developer aesthetic.
+- **Color Palette (CSS Variables):**
+  - Background Primary: `#0a0a0f`
+  - Background Surface / Card: `#12121a` (with subtle `rgba(255, 255, 255, 0.07)` 1px borders and `backdrop-filter: blur(12px)`)
+  - Accent Primary: `#6366f1` (Indigo) to `#22d3ee` (Cyan) subtle gradients
+  - Text Primary: `#f8fafc`
+  - Text Muted: `#94a3b8`
+- **Visual Polish:** Subtle background radial glow, dot-matrix or grid pattern background using pure CSS `radial-gradient` / `linear-gradient`, glowing borders on card hover, and monospace pill badges for tech stacks.
+
+### 3. Content & Section Structure
+
+#### A. Sticky Glassmorphism Navbar
+- Left: Monospace brand logo `daksh.dev` with a blinking terminal cursor animation (`@keyframes`).
+- Right: Smooth-scroll links (`#about`, `#projects`, `#skills`, `#achievements`, `#contact`) and a highlighted CTA button (`Resume`).
+
+#### B. Hero Section
+- Status Badge: A glowing green dot pulsing via CSS `@keyframes` with text: `"Available for AI & Software Engineering Internships / Sprints"`.
+- Headline: `"Hi, I'm Daksh Gupta."` with a gradient text sub-headline: `"Building AI Systems, Local LLM Workflows & Quantitative Tools."`
+- Bio Summary: Computer Science & Artificial Intelligence undergraduate at **Newton School of Technology (Rishihood University)**. Focused on applied AI, local model orchestration, neural systems, and rapid product engineering.
+- CTAs: Primary button (`View Projects` -> `#projects`) and Secondary button (`Get in Touch` -> `#contact`).
+- Hero Visual: A pure-CSS styled macOS terminal window on the right side displaying a mock `neofetch` or JSON profile output (`name: "Daksh Gupta"`, `role: "CS & AI Undergrad"`, `hardware: "MacBook M5"`, `focus: ["Local LLMs", "Agentic Workflows", "Quant Alpha"]`).
+
+#### C. Featured Projects (Bento Grid or Responsive 2x2 Card Grid)
+Each card must have a subtle top border glow on hover, category tag, title, concise description, monospace tech stack pills, and placeholder links for `GitHub` and `Live Demo`:
+1. **Automated Documentation Drift Detection System**
+   - *Tag:* `Hacktober Hackathon | Local AI`
+   - *Description:* Built during an 8-hour sprint to automatically detect and flag semantic drift between source code changes and technical documentation using local LLM inference and vector embeddings.
+   - *Stack:* `Python`, `Ollama (Gemma 4)`, `DeepSeek`, `Qwen`, `all-MiniLM-L6-v2`
+2. **iTantra (SIH26173 — ISRO Problem Statement)**
+   - *Tag:* `Smart India Hackathon | Neural Comms`
+   - *Description:* Designed a neural transceiver radio access system engineered for resilient, high-efficiency data transmission across ultra-low-bitrate communication links.
+   - *Stack:* `Deep Learning`, `Signal Processing`, `Neural Transceivers`, `Python`
+3. **EduGig — Career Discovery Platform**
+   - *Tag:* `EdTech & Product`
+   - *Description:* Co-created a career discovery and micro-opportunity platform tailored for high school students to explore real-world projects and mentorship pathways.
+   - *Stack:* `Product Strategy`, `Full-Stack Prototyping`, `UI/UX`
+4. **Quantitative Alpha Research & Backtesting**
+   - *Tag:* `Quantitative Finance`
+   - *Description:* Developed and backtested formulaic alpha models using market datasets, optimizing for Sharpe ratio, turnover, and strict drawdown cutoff criteria.
+   - *Stack:* `WorldQuant BRAIN`, `Quantitative Modeling`, `Data Analysis`
+
+#### D. Technical Arsenal (Skills Grid)
+Organize into clean, bordered category cards using monospace pill tags:
+- **Languages & Core:** `Python 3`, `HTML5`, `CSS3`, `C++`, `SQL`, `Bash/Zsh`
+- **AI & Machine Learning:** `Ollama`, `Local LLMs (Qwen, Gemma, DeepSeek)`, `Sentence-Transformers`, `Embeddings`, `Agentic Workflows`, `Hermes Agent`
+- **Developer Tools & Environment:** `VS Code`, `Git & GitHub`, `Replit`, `macOS Terminal`, `Tkinter`
+
+#### E. Hackathons & Milestones (CSS Vertical Timeline)
+- **CoNSTruct 2.0 AI & Product Hackathon** — Built and shipped rapid AI product prototypes across Newton School of Technology campuses.
+- **Hacktober Hackathon** — Completed an 8-hour build sprint developing a local-first AI documentation drift detector.
+- **Smart India Hackathon (SIH)** — Authored architecture and presentation assets for ISRO problem statement SIH26173 (iTantra).
+- **B.Tech in CS & AI** — Enrolled at Newton School of Technology, Rishihood University (Sonipat).
+
+#### F. Contact & Footer
+- Clean centered card inviting collaboration on AI projects, hackathons, or software engineering roles.
+- Pure HTML `mailto:` action button and social icon links (GitHub, LinkedIn, X/Twitter, Email).
+- Minimal footer: `"Designed & built with pure HTML & CSS by Daksh Gupta."`
+
+### 4. Output Instructions
+Provide the complete, production-ready code with zero placeholders or `<!-- add more here -->` comments. Write every project card, skill badge, and CSS rule in full.
